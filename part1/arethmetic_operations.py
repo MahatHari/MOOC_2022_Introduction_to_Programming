@@ -38,3 +38,14 @@ perday = total/7
 print(f"Average food expenditure:")
 print(f"Daily: {perday} euros")
 print(f"Weekly: {total} euros")
+
+#Strudents in group
+student = int(input("How many students on the course?"))
+size = int(input("Desired group size? "))
+
+if student % size > 0:
+    groups = student//size + 1
+else:
+    groups = student//size
+
+print(f"Number of groups formed: {groups}")
