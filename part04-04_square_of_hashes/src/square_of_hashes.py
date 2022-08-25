@@ -1,8 +1,15 @@
 # Copy here code of line function from previous exercise
+def line(num, string):
+    if string == "":
+        string = "*"
+    print(string[0]*num)
+
 
 def square_of_hashes(size):
     # You should call function line here with proper parameters
-    line(4, "#")
+    for row in range(size):
+        line(size, "#")
+
 
 # You can test your function by calling it within the following block
 if __name__ == "__main__":
